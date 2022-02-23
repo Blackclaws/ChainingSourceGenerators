@@ -32,7 +32,7 @@ public class GeneratorOne : ISourceGenerator
                             context.AddSource(type.Identifier+ "genrated.cs",$@"
                                 public partial class {type.Identifier} " + @"{
                                    public void SayHello() {
-                                    Console.WriteLine(" + "\"Hello from" + $"{type.Identifier}" +"\"" +@");
+                                    Console.WriteLine(" + "\"Hello from " + $"{type.Identifier}" +"\"" +@");
                                 } 
                             }
 ");
